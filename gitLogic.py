@@ -1,24 +1,27 @@
-class OgrenciIslemleri:
-    def my_function(self):
-        studentNum = int(input("Öğrenci sayısını giriniz."))
-        thislist = []
-
-        for i in range(0, studentNum):
-            name = input("Öğrenci adını giriniz.")
-            thislist.append(name)
-
-        thislist.sort()
-
-        for i in thislist:
-            print(i)
-
-    def call_fonk(self):
-        boolVal = 1
-        while(boolVal == 1):
-            self.my_function()
-            boolVal = int(input("Sınıf kaydı girmek ister misiniz?  0/1"))
+localText = "Localdeki veriler"
+stageText = "2"
+version = ""
+gitList = []
 
 
-""" User  Interface """
-ogrenciIslemi = OgrenciIslemleri()
-ogrenciIslemi.call_fonk()
+class GitHUB:
+    """ 3 değişken olacak local stage version +
+    push / pull / add / commit methodları olacak
+    ersiyon push olunca listeye yeni versiyonu ekleyecek
+    head değişkeni olacak güncel versiyonu gösterek
+    checkout adlı bir method olacak head de bulunan versiyonalrı değiştirecek."""
+
+    def git_add(self):
+        stageText = localText
+    self.git_add()
+    print(stageText)
+
+    """  def my_commit(self):
+        saf = 1
+
+    def git_push(self):
+        baf = 2
+
+    def git_pull(self):
+        als = 3
+    """
